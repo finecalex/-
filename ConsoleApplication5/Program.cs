@@ -2,14 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace ConsoleApplication5
+namespace ConsoleApplication1
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-        }
-    }
+class Program
+{
+static void Main(string[] args)
+{
+Console.WriteLine("==========================================");
+Console.WriteLine();
+Console.WriteLine("ДОБРО ПОЖАЛОВАТЬ! Вас приветствует программа по нахождению коэффициента финансовой независимости. РАЗВИВАЙТЕСЬ И БУДЬТЕ ФИНАНСОВО НЕ-ЗА-ВИ-СИ-МЫ!");
+Console.WriteLine();
+Console.WriteLine("==========================================");
+double a, b, c;
+Console.WriteLine("Введите количество собственные средств");
+a = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите количество заемных средств");
+b = Convert.ToDouble(Console.ReadLine());
+c = a/b;
+Console.WriteLine("Коэффициент финансовой независимости равен " + c);
+Console.ReadKey();
+}
+}
 }
